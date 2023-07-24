@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #25383F;
+    --color-secondary: #FF5C00;
+    --color-dark: #0D2F3F;
+    --color-green: #286F6C;
+    --color-yellow: #F1C249;
+    --color-red: #F26440;
+    --color-white: #ffffff;
+    --color-bg: #F8F7F1;
+
+    --card-border-radius: 20px;
+    --media-border-radius: 50%;
+
+    --padding-1: 1.2rem;
+    --Iconsax-Size:20px;
+    --Iconsax-Color:#9fb3c7;
+}
+
+/* .dark-mode-variables {
+
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 14px;
+    overflow-x: hidden;
+    
+}
+
+body {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.nav-menu a span {
+    font-size: 16px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.nav-menu a {
+    margin-right: 64px;
+}
+
+.nav-menu {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.banner-text-container {
+    font-size: 48px;
+}
+
+.banner-text-container span {
+    color: var(--color-secondary);
+}
+
+.banner-text-container .banner-text {
+    font-weight: 600;
+}
+
+.banner {
+    height: 484px;
+    background-color: var(--color-bg);
+}
+
+.services {
+    height: 635px;
+    margin-top: 100px;
+}
+
+.services h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.services-text h2, .works h2 {
+    font-size: 48px;
+}
+
+.services-text p {
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.row, .col, .col-4, .col-6, .col-8 {
+    padding: 0;
+    margin: 0;
+}
+
+.services-text > div, .services-card > div {
+    margin: auto 10%;
+}
+
+.services-card > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.services-card .card {
+    width: 480px;
+    height: 126px;
+    border-radius: 20px;
+    border-color: #f0f0f0;
+    box-shadow: 30px 14px 100px rgb(0 0 0 / 7%);
+    display: flex;
+    justify-content: center;
+}
+
+.iconsax {
+    --Iconsax-Size:42px;
+    --Iconsax-Color: #fff;
+}
+
+.icon.red {
+    background: var(--color-red);
+}
+
+.icon.green {
+    background: var(--color-green);
+}
+
+.icon.yellow {
+    background: var(--color-yellow);
+}
+
+.banner-text-container > .row {
+    margin: 100px;
+}
+
+.rec-box-1 {
+    width: 100px;
+    height: 100px;
+    background: rgb(255 92 0 / 76%);
+    filter: blur(10px);
+    transform: rotate(22deg);
+}
+
+.rec-box-2 {
+    width: 70px;
+    height: 70px;
+    background: rgb(255 92 0 / 76%);
+    filter: blur(10px);
+    transform: rotate(64deg);
+    position: absolute;
+    right: 47px;
+}
+
+.col-3 {
+    position: relative;
+}
+
+
+.card .col span {
+    font-size:24px;
+    font-weight: 400;
+    color: var(--color-dark);
+}
+
+.card .sub-text {
+    flex: 2;
+}
+
+.card .icon {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.secondary-services-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.secondary-services-text span.number {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.secondary-services-text span.text {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.works {
+    background-color: var(--color-bg);
+}
+
+.works > div {
+    margin: 100px;
+}
+
+.works .works-container {
+    width: 500px;
+    height: 450px;
+    background: rgb(255 255 255 / 20%);
+    border-radius: 40px;
+    box-shadow: 0px 0px 22px rgb(0 0 0 / 20%);
+}
+
+.works img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.works > div div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 63px;
+}
+
+.works p {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.footer-icon {
+    box-shadow: 0px 4px 24px rgb(0 0 0 / 8%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.footer-icon .iconsax {
+    --Iconsax-Color: var(--color-secondary);
+    --Iconsax-Size:23px;
+}
+
+.secondary-text {
+    color: var(--color-secondary);
+}
+
+.contact-contianer {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-hero-text {
+    margin: 100px;
+}
+
+.contact-hero-text h2 {
+    font-size: 48px;
+    color: #0D2F3F;
+}
+
+.contact-us {
+    margin: 100px;
+}
+
+.contact-us .contact-us-text {
+    font-size: 32px;
+    color: #0D2F3F;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.conatct-us-social {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 50px;
+}
+
+.conatct-us-social i {
+    font-size: 45px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+
+    .banner-text-container > .row, .works > div {
+        margin: 40px;
+    }
+
+    .banner-text-container > .row {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 88px;
+    }
+
+    .banner-text-container .banner-text {
+        font-size: 24px;
+    }
+
+    .nav-menu a {
+        margin-right: 35px;
+    }
+
+    .rec-box-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rec-box-2 {
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+    .services-text h2, .works h2 {
+        font-size: 24px;
+    }
+
+
+
+    .works img {
+        width: 330px;
+        height: 261px;
+    }
+
+    .works > div div {
+        gap: 28px;
+    }
+
+    .works .works-container {
+        width: 330px;
+        height: 261px;
+    }
+
+    .services-card .card {
+        width: 348px;
+        height: 100px;
+    }
+
+    .iconsax {
+        --Iconsax-Size: 38px;
+    }
+
+    .card .icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .card .col span {
+        font-size: 16px;
+    }
+
+    .secondary-services-text span.number {
+        font-size: 32px;
+    }
+
+    .secondary-services-text span.text {
+        font-size: 14px;
+    }    
+
+    .services > .row {
+        gap: 100px;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .services {
+        height: 1161px;
+    }
+    .contact-hero-text,.contact-us {
+        margin: 40px;
+    }
+
+    .contact-hero-text h2 {
+        font-size: 32px;
+    }
+
+    .contact-us .contact-us-text {
+        font-size: 24px;
+    }
+    .conatct-us-social i {
+        font-size: 35px;
+    }
+  }
+
+  @media all and (device-width: 768px) and (device-height: 1024px) {
+     /* For mobile phones: */
+
+     .banner-text-container > .row, .works > div {
+        margin: 40px;
+    }
+
+    .banner-text-container > .row {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 88px;
+    }
+
+    .banner-text-container .banner-text {
+        font-size: 24px;
+    }
+
+    .nav-menu a {
+        margin-right: 35px;
+    }
+
+    .rec-box-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rec-box-2 {
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+    .services-text h2, .works h2 {
+        font-size: 24px;
+    }
+
+
+
+    .works img {
+        width: 330px;
+        height: 261px;
+    }
+
+    .works > div div {
+        gap: 28px;
+    }
+
+    .works .works-container {
+        width: 330px;
+        height: 261px;
+    }
+
+    .services-card .card {
+        width: 348px;
+        height: 100px;
+    }
+
+    .iconsax {
+        --Iconsax-Size: 38px;
+    }
+
+    .card .icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .card .col span {
+        font-size: 16px;
+    }
+
+    .secondary-services-text {
+        width: 50%;
+    }
+
+    .secondary-services-text span.number {
+        font-size: 32px;
+    }
+
+    .secondary-services-text span.text {
+        font-size: 14px;
+    }    
+
+    .services > .row {
+        gap: 70px;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .services {
+        height: 830px;
+    }
+    .contact-hero-text,.contact-us {
+        margin: 40px;
+    }
+
+    .contact-hero-text h2 {
+        font-size: 32px;
+    }
+
+    .contact-us .contact-us-text {
+        font-size: 24px;
+    }
+    .conatct-us-social i {
+        font-size: 35px;
+    }
+  }
+  
